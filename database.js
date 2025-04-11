@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const connectToMongo = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/Todo').then(()=>{
+        await mongoose.connect('mongodb+srv://ahmad:ahmad1234@todo.d9wkbjo.mongodb.net/?retryWrites=true&w=majority&appName=todo').then(()=>{
             console.log("Connected to MongoDB Successsfully");
         });
        
